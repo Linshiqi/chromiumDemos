@@ -2,6 +2,12 @@
 
 This is my learning note on Chromium source code.
 
+My learning source are from :
+- Chromium's official doc in its codebase.
+- https://github.com/keyou/chromium_demo (Chromium 120 for this point)
+
+The version of Chromium Here is 131.0.6778.70
+
 The main content is :
 - GN : the build tool of Chromium
 - Message Loop : A very important concept of Chromium programming
