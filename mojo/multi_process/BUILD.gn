@@ -1,0 +1,30 @@
+executable("mojo_process_a") {
+  sources = [
+    "pipe_reader.h",
+    "pipe_reader.cc",
+    "mojo_process_a.cc",
+  ]
+  deps = [
+    "//mojo/public:sdk",
+    "//base",
+  ]
+}
+
+executable("mojo_process_b") {
+  sources = [
+    "pipe_reader.h",
+    "pipe_reader.cc",
+    "mojo_process_b.cc"
+  ]
+  deps = [
+    "//mojo/public:sdk",
+    "//base",
+  ]
+}
+
+group("multi_process") {
+  deps = [
+    ":mojo_process_a",
+    ":mojo_process_b"
+  ]
+}

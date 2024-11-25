@@ -1,0 +1,7 @@
+executable("hello_mojo") {
+  sources = [ "hello_mojo.cc" ]
+  deps = [
+    "//mojo/public:sdk",
+    "//base",
+  ]
+}

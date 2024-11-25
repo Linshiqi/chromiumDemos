@@ -1,0 +1,6 @@
+group("chromium_demos") {
+  deps = [
+    "//demos/mojo/single_process:hello_mojo",
+    "//demos/mojo/multi_process"
+  ]
+}
